@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="23" skipped="0" failures="0" errors="0" time="4.238" hostname="LAPTOP-MLNTQEKO" timestamp="2023-09-02T19:02:43">
+<properties>
+<property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.encoding.pkg" value="sun.io"/>
+<property name="file.separator" value="\"/>
+<property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+<property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+<property name="java.class.path" value="C:\Users\User\Desktop\progetto\progettoKlotski\target\test-classes;C:\Users\User\Desktop\progetto\progettoKlotski\target\classes;C:\Users\User\.p2\pool\plugins\junit-jupiter-api_5.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-jupiter-engine_5.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-jupiter-migrationsupport_5.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-jupiter-params_5.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-platform-commons_1.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-platform-engine_1.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-platform-launcher_1.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-platform-runner_1.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-platform-suite-api_1.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-platform-suite-engine_1.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-platform-suite-commons_1.9.3.jar;C:\Users\User\.p2\pool\plugins\junit-vintage-engine_5.9.3.jar;C:\Users\User\.p2\pool\plugins\org.opentest4j_1.2.0.jar;C:\Users\User\.p2\pool\plugins\org.apiguardian.api_1.1.2.jar;C:\Users\User\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar;C:\Users\User\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar;C:\Users\User\.m2\repository\org\openjfx\javafx-controls\21-ea+24\javafx-controls-21-ea+24.jar;C:\Users\User\.m2\repository\org\openjfx\javafx-controls\21-ea+24\javafx-controls-21-ea+24-win.jar;C:\Users\User\.m2\repository\org\openjfx\javafx-base\21-ea+24\javafx-base-21-ea+24.jar;C:\Users\User\.m2\repository\org\openjfx\javafx-base\21-ea+24\javafx-base-21-ea+24-win.jar;C:\Users\User\.m2\repository\org\openjfx\javafx-graphics\21-ea+24\javafx-graphics-21-ea+24.jar;C:\Users\User\.m2\repository\org\openjfx\javafx-graphics\21-ea+24\javafx-graphics-21-ea+24-win.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\User\.m2\repository\org\testfx\testfx-junit\4.0.15-alpha\testfx-junit-4.0.15-alpha.jar;C:\Users\User\.m2\repository\org\testfx\testfx-core\4.0.15-alpha\testfx-core-4.0.15-alpha.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;C:\Users\User\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-reporting\1.10.0\junit-platform-reporting-1.10.0.jar"/>
+<property name="java.class.version" value="52.0"/>
+<property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_311\lib\endorsed"/>
+<property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_311\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+<property name="java.home" value="C:\Program Files\Java\jre1.8.0_311"/>
+<property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+<property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_311\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Java\jdk1.8.0_121/bin;C:\Program Files\Java\jdk-11.0.2\bin;C:\Program Files\Git\cmd;C:\Program Files\Apache\apache-maven-3.9.4\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\git;;."/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="1.8.0_311-b11"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="1.8"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="http://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+<property name="java.version" value="1.8.0_311"/>
+<property name="java.vm.info" value="mixed mode"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="1.8"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="25.311-b11"/>
+<property name="javafx.runtime.version" value="8.0.311-b11"/>
+<property name="javafx.version" value="8.0.311"/>
+<property name="line.separator" value="
+"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 10"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_311\lib\resources.jar;C:\Program Files\Java\jre1.8.0_311\lib\rt.jar;C:\Program Files\Java\jre1.8.0_311\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_311\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_311\lib\jce.jar;C:\Program Files\Java\jre1.8.0_311\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_311\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_311\classes"/>
+<property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_311\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.desktop" value="windows"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="test.MainForTest"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="user.country" value="IT"/>
+<property name="user.dir" value="C:\Users\User\Desktop\progetto\progettoKlotski"/>
+<property name="user.home" value="C:\Users\User"/>
+<property name="user.language" value="it"/>
+<property name="user.name" value="User"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="Europe/Berlin"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="testMoveUp()" classname="test.GiocoTest" time="0.006">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testMoveUp()]
+display-name: testMoveUp()
+]]></system-out>
+</testcase>
+<testcase name="testSomethingSaved()" classname="test.GiocoTest" time="0.309">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testSomethingSaved()]
+display-name: testSomethingSaved()
+]]></system-out>
+</testcase>
+<testcase name="testGetPezzoByPosizione()" classname="test.GiocoTest" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testGetPezzoByPosizione()]
+display-name: testGetPezzoByPosizione()
+]]></system-out>
+</testcase>
+<testcase name="testMoveRight()" classname="test.GiocoTest" time="0.005">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testMoveRight()]
+display-name: testMoveRight()
+]]></system-out>
+</testcase>
+<testcase name="testPartitaSalvata()" classname="test.GiocoTest" time="0.082">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testPartitaSalvata()]
+display-name: testPartitaSalvata()
+]]></system-out>
+</testcase>
+<testcase name="testRemoveAllPieces()" classname="test.GiocoTest" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testRemoveAllPieces()]
+display-name: testRemoveAllPieces()
+]]></system-out>
+</testcase>
+<testcase name="testGetGioco()" classname="test.GiocoTest" time="0.009">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testGetGioco()]
+display-name: testGetGioco()
+]]></system-out>
+</testcase>
+<testcase name="testGetScene()" classname="test.ChoiceSceneTest" time="0.115">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.ChoiceSceneTest]/[method:testGetScene()]
+display-name: testGetScene()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="test.MossaTest" time="0.006">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.MossaTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="testReset()" classname="test.GiocoTest" time="3.082">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testReset()]
+display-name: testReset()
+]]></system-out>
+</testcase>
+<testcase name="testIncrementCounter()" classname="test.GameSceneTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GameSceneTest]/[method:testIncrementCounter()]
+display-name: testIncrementCounter()
+]]></system-out>
+</testcase>
+<testcase name="testAddPezzo()" classname="test.GiocoTest" time="0.005">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testAddPezzo()]
+display-name: testAddPezzo()
+]]></system-out>
+</testcase>
+<testcase name="testUndo()" classname="test.GiocoTest" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testUndo()]
+display-name: testUndo()
+]]></system-out>
+</testcase>
+<testcase name="testGetGridPane()" classname="test.GiocoTest" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testGetGridPane()]
+display-name: testGetGridPane()
+]]></system-out>
+</testcase>
+<testcase name="testIsEmpty()" classname="test.GiocoTest" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testIsEmpty()]
+display-name: testIsEmpty()
+]]></system-out>
+</testcase>
+<testcase name="testGetScene()" classname="test.GameSceneTest" time="0.055">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GameSceneTest]/[method:testGetScene()]
+display-name: testGetScene()
+]]></system-out>
+</testcase>
+<testcase name="testMoveDown()" classname="test.GiocoTest" time="0.007">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testMoveDown()]
+display-name: testMoveDown()
+]]></system-out>
+</testcase>
+<testcase name="testApplicationMenu()" classname="test.ApplicationMenuTest" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.ApplicationMenuTest]/[method:testApplicationMenu()]
+display-name: testApplicationMenu()
+]]></system-out>
+</testcase>
+<testcase name="testGetScene()" classname="test.HomeSceneTest" time="0.004">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.HomeSceneTest]/[method:testGetScene()]
+display-name: testGetScene()
+]]></system-out>
+</testcase>
+<testcase name="testMoveLeft()" classname="test.GiocoTest" time="0.005">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testMoveLeft()]
+display-name: testMoveLeft()
+]]></system-out>
+</testcase>
+<testcase name="testGetPosizionePezzo()" classname="test.GiocoTest" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testGetPosizionePezzo()]
+display-name: testGetPosizionePezzo()
+]]></system-out>
+</testcase>
+<testcase name="testSelectPiece()" classname="test.GiocoTest" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.GiocoTest]/[method:testSelectPiece()]
+display-name: testSelectPiece()
+]]></system-out>
+</testcase>
+<testcase name="testParamConstructorAndGetters()" classname="test.MossaTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:test.MossaTest]/[method:testParamConstructorAndGetters()]
+display-name: testParamConstructorAndGetters()
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>
