@@ -1,7 +1,5 @@
 package test;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Paths;
@@ -22,10 +20,13 @@ import javafx.stage.Stage;
 import klotski.Main;
 
 public class MainForTest extends Application {
+	
+	public final static String PATH_TO_SAVE_REPORT="reports";
+	
 	// esegue i test specificati
 	private static void executeTests(ArrayList<Class> testCases) throws IOException {
 		PrintWriter out = new PrintWriter(System.out);
-		LegacyXmlReportGeneratingListener xmlListener = new LegacyXmlReportGeneratingListener(Paths.get("prova"), out);
+		LegacyXmlReportGeneratingListener xmlListener = new LegacyXmlReportGeneratingListener(Paths.get(PATH_TO_SAVE_REPORT), out);
 		
 		ArrayList<ClassSelector> classes = new ArrayList<ClassSelector>();
 		for(int i = 0; i < testCases.size(); i++) {
@@ -33,15 +34,13 @@ public class MainForTest extends Application {
 			classes.add(toAdd);
 		}
 		
-		LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request().selectors(/*DiscoverySelectors.selectClass(test)*/classes).build();
+		LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request().selectors(classes).build();
 		
 		Launcher launcher = LauncherFactory.create();
 		TestPlan testPlan = launcher.discover(request);
 		launcher.registerTestExecutionListeners(xmlListener);
 		launcher.execute(testPlan);
 		
-		//out.flush();
-		//out.close();
 	}
 	
 	@Override

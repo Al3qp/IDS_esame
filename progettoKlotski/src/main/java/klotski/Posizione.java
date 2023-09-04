@@ -26,7 +26,7 @@ public class Posizione {
 	 * Costruttore di copia
 	 * @param p Posizione di cui eseguire la copia; non deve essere {@code null} .
 	 * 
-	 * @exception NullPointerException Se {@code p} � {@code null}
+	 * @exception NullPointerException Se {@code p} è {@code null}
 	 */
 	public Posizione(Posizione p) {
 		super();

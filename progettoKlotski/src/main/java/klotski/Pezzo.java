@@ -24,9 +24,6 @@ public class Pezzo extends Rectangle {
 	/* ---------- ATTRIBUTI ---------- */
 	/** Tipo di rettangolo. */
 	private TipoPezzo tipoPezzo;
-	
-//	/** Reference alla griglia in cui mettere i pezzi . */
-//	private GridPane grid;
 
 	/** Indica la dimensione di 1 unità per fare il lato. */
 	public static final double UNIT = 80;
@@ -45,11 +42,6 @@ public class Pezzo extends Rectangle {
 	/**
 	 * Costruttore
 	 * @param tipoPezzo Tipo di pezzo da costruire
-	 */
-	/*
-	 * @param grid Reference alla griglia in cui mettere il rettangolo
-	 * @param row Coordinata riga in cui metterlo nella griglia
-	 * @param column Coordinata colonna in cui metterlo nella griglia
 	 */
 	public Pezzo(Pezzo.TipoPezzo tipoPezzo) {
 		super();

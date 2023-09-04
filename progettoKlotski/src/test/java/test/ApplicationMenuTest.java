@@ -7,7 +7,6 @@ import javafx.scene.control.MenuBar;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import klotski.Main;
 import klotski.menu.ApplicationMenu;
 
 

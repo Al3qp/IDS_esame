@@ -1,8 +1,11 @@
 package test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import klotski.Posizione;
 
@@ -36,5 +39,11 @@ public class PosizioneTest {
 		Posizione pos=new Posizione(2,4);
 		
 		assertEquals(stringa,pos.toString());
+	}
+	
+	@Test
+	public void testCopyConstructor() {
+		assertThrows(NullPointerException.class,() ->{ new Posizione(null);});
+		
 	}
 }

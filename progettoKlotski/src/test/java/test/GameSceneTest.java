@@ -2,19 +2,13 @@ package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.testfx.framework.junit.ApplicationTest;
-
 
 import javafx.scene.Scene;
-import javafx.stage.Stage;
-import klotski.menu.ApplicationMenu;
 import klotski.scene.GameScene;
 import klotski.scene.HomeScene;
 
-public class GameSceneTest extends ApplicationTest{
+public class GameSceneTest{
 	
 	@Test
 	public void testIncrementCounter() {

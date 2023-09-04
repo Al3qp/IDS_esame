@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 
 import javafx.scene.Scene;
 import klotski.scene.ChoiceScene;
-import klotski.scene.GameScene;
 import klotski.scene.HomeScene;
 
 class ChoiceSceneTest {

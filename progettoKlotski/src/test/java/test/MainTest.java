@@ -1,22 +1,14 @@
 package test;
-import javafx.stage.Stage;
+
 import klotski.Main;
-import klotski.scene.HomeScene;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 
 public class MainTest{
-
-   @BeforeAll
-    public static void preClass() throws Exception{
-	    Main main = new Main();
-        main.start(new Stage());
-    }
 
     @Test
     public void testStartMethod() {

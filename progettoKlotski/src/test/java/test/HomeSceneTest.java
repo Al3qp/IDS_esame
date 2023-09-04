@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import javafx.scene.Scene;
-import klotski.scene.GameScene;
 import klotski.scene.HomeScene;
 
 class HomeSceneTest {

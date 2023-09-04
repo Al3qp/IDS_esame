@@ -104,70 +104,70 @@ public class GameScene extends Scene {
 			// --- creo il rettangolo orizzontale e lo aggiungo
 			rect_orizz = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ/*, root, 2, 1*/); Gioco.getGioco().addPezzo(rect_orizz, new Posizione(2, 1));
 			// --- creo i rettangoli verticali e li aggiungo
-			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 0, 0*/); Gioco.getGioco().addPezzo(r1, new Posizione(0, 0));
-			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 0, 3*/); Gioco.getGioco().addPezzo(r2, new Posizione(0, 3));
-			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 2, 0*/); Gioco.getGioco().addPezzo(r3, new Posizione(2, 0));
-			r4 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 2, 3*/); Gioco.getGioco().addPezzo(r4, new Posizione(2, 3));
+			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r1, new Posizione(0, 0));
+			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r2, new Posizione(0, 3));
+			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r3, new Posizione(2, 0));
+			r4 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r4, new Posizione(2, 3));
 			// --- creo i quadratini e li aggiungo
-			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 3, 1*/); Gioco.getGioco().addPezzo(q1, new Posizione(3, 1));
-			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 3, 2*/); Gioco.getGioco().addPezzo(q2, new Posizione(3, 2));
-			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 4, 0*/); Gioco.getGioco().addPezzo(q3, new Posizione(4, 0));
-			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 4, 3*/); Gioco.getGioco().addPezzo(q4, new Posizione(4, 3));
+			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q1, new Posizione(3, 1));
+			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q2, new Posizione(3, 2));
+			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q3, new Posizione(4, 0));
+			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q4, new Posizione(4, 3));
 			// --- creo il quadratone e lo aggiungo
-			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE/*, root*//*, 0, 1*/); Gioco.getGioco().addPezzo(q, new Posizione(0,1 ));
+			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE); Gioco.getGioco().addPezzo(q, new Posizione(0,1 ));
 			
 			break;
 		case 2:
 			
 			// --- creo i rettangoli orizzontali e li aggiungo
-			rect_orizz = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ/*, root*//*, 4, 0*/); Gioco.getGioco().addPezzo(rect_orizz, new Posizione(4, 0));
-			rect_orizz2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ/*, root*//*, 4, 2*/); Gioco.getGioco().addPezzo(rect_orizz2, new Posizione(4, 2));
+			rect_orizz = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ); Gioco.getGioco().addPezzo(rect_orizz, new Posizione(4, 0));
+			rect_orizz2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ); Gioco.getGioco().addPezzo(rect_orizz2, new Posizione(4, 2));
 			// --- creo i rettangoli verticali e li aggiungo
-			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 1, 0*/); Gioco.getGioco().addPezzo(r1, new Posizione(1, 0));
-			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 1, 3*/); Gioco.getGioco().addPezzo(r2, new Posizione(1, 3));
-			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 2, 1*/); Gioco.getGioco().addPezzo(r3, new Posizione(2, 1));
+			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r1, new Posizione(1, 0));
+			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r2, new Posizione(1, 3));
+			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r3, new Posizione(2, 1));
 			// --- creo i quadratini e li aggiungo
-			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 0, 0*/); Gioco.getGioco().addPezzo(q1, new Posizione(0, 0));
-			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 0, 3*/); Gioco.getGioco().addPezzo(q2, new Posizione(0, 3));
-			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 3, 0*/); Gioco.getGioco().addPezzo(q3, new Posizione(3, 0));
-			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 3, 3*/); Gioco.getGioco().addPezzo(q4, new Posizione(3, 3));
+			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q1, new Posizione(0, 0));
+			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q2, new Posizione(0, 3));
+			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q3, new Posizione(3, 0));
+			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q4, new Posizione(3, 3));
 			// --- creo il quadratone e lo aggiungo
-			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE/*, root*//*, 0, 1*/); Gioco.getGioco().addPezzo(q, new Posizione(0, 1));
+			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE); Gioco.getGioco().addPezzo(q, new Posizione(0, 1));
 			break;
 		case 3:
 			
 			// --- creo i rettangoli orizzontali e li aggiungo
-			rect_orizz = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ/*, root*//*, 3, 1*/); Gioco.getGioco().addPezzo(rect_orizz, new Posizione(3, 1));
-			rect_orizz2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ/*, root*//*, 4, 2*/); Gioco.getGioco().addPezzo(rect_orizz2, new Posizione(4, 2));
+			rect_orizz = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ); Gioco.getGioco().addPezzo(rect_orizz, new Posizione(3, 1));
+			rect_orizz2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ); Gioco.getGioco().addPezzo(rect_orizz2, new Posizione(4, 2));
 			// --- creo i rettangoli verticali e li aggiungo
-			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 0, 0*/); Gioco.getGioco().addPezzo(r1, new Posizione(0, 0));
-			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 2, 0*/); Gioco.getGioco().addPezzo(r2, new Posizione(2, 0));
-			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 1, 1*/); Gioco.getGioco().addPezzo(r3, new Posizione(1, 1));
+			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r1, new Posizione(0, 0));
+			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r2, new Posizione(2, 0));
+			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r3, new Posizione(1, 1));
 			// --- creo i quadratini e li aggiungo
-			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 0, 1*/); Gioco.getGioco().addPezzo(q1, new Posizione(0, 1));
-			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 0, 2*/); Gioco.getGioco().addPezzo(q2, new Posizione(0, 2));
-			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 0, 3*/); Gioco.getGioco().addPezzo(q3, new Posizione(0, 3));
-			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 3, 3*/); Gioco.getGioco().addPezzo(q4, new Posizione(3, 3));
+			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q1, new Posizione(0, 1));
+			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q2, new Posizione(0, 2));
+			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q3, new Posizione(0, 3));
+			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q4, new Posizione(3, 3));
 			// --- creo il quadratone e lo aggiungo
-			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE/*, root*//*, 1, 2*/); Gioco.getGioco().addPezzo(q, new Posizione(1, 2));
+			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE); Gioco.getGioco().addPezzo(q, new Posizione(1, 2));
 			break;
 		case 4:
 			
 			// --- creo il rettangolo orizzontale e lo aggiungo
-			rect_orizz = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ/*, root*//*, 4, 1*/); Gioco.getGioco().addPezzo(rect_orizz, new Posizione(4, 1));
+			rect_orizz = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_ORIZZ); Gioco.getGioco().addPezzo(rect_orizz, new Posizione(4, 1));
 		
 			// --- creo i rettangoli verticali e li aggiungo
-			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 0, 0*/); Gioco.getGioco().addPezzo(r1, new Posizione(0, 0));
-			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 0, 3*/); Gioco.getGioco().addPezzo(r2, new Posizione(0, 3));
-			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 2, 0*/); Gioco.getGioco().addPezzo(r3, new Posizione(2, 0));
-			r4 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT/*, root*//*, 2, 3*/); Gioco.getGioco().addPezzo(r4, new Posizione(2, 3));
+			r1 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r1, new Posizione(0, 0));
+			r2 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r2, new Posizione(0, 3));
+			r3 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r3, new Posizione(2, 0));
+			r4 = new Pezzo(Pezzo.TipoPezzo.RETTANGOLO_VERT); Gioco.getGioco().addPezzo(r4, new Posizione(2, 3));
 			// --- creo i quadratini e li aggiungo
-			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 2, 1*/); Gioco.getGioco().addPezzo(q1, new Posizione(2, 1));
-			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 2, 2*/); Gioco.getGioco().addPezzo(q2, new Posizione(2, 2));
-			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 3, 1*/); Gioco.getGioco().addPezzo(q3, new Posizione(3, 1));
-			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO/*, root*//*, 3, 2*/); Gioco.getGioco().addPezzo(q4, new Posizione(3, 2));
+			q1 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q1, new Posizione(2, 1));
+			q2 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q2, new Posizione(2, 2));
+			q3 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q3, new Posizione(3, 1));
+			q4 = new Pezzo(Pezzo.TipoPezzo.QUADRATINO); Gioco.getGioco().addPezzo(q4, new Posizione(3, 2));
 			// --- creo il quadratone e lo aggiungo
-			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE/*, root*//*, 0, 1*/); Gioco.getGioco().addPezzo(q, new Posizione(0, 1));
+			q = new Pezzo(Pezzo.TipoPezzo.QUADRATONE); Gioco.getGioco().addPezzo(q, new Posizione(0, 1));
 			break;
 		case 5:
 			// Ripristino configurazione salvata
