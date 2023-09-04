@@ -539,7 +539,7 @@ public class Gioco {
 	/**
 	 * Crea una nuova lista delle mosse eseguite e la riempe con le mosse della partita salvata, restituisce 
 	 * poi tale lista.
-	 * @return ArrayList<Mossa> lista mosse partita salvata.
+	 * @return ArrayList{@literal<Mossa>} lista mosse partita salvata.
 	 */
 	public static ArrayList<Mossa> getListaMosse(){
 		ArrayList<Mossa> oldListaMosse=new ArrayList<Mossa>();
