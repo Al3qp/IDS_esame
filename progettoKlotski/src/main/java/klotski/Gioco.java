@@ -37,7 +37,7 @@ public class Gioco {
 	/** Reference alla griglia in cui mettere i pezzi . */
 	private GridPane grid;
 	
-	/** Indica il pezzo selezionato, o {@code null} se nessun pezzo � selezionato */
+	/** Indica il pezzo selezionato, o {@code null} se nessun pezzo è selezionato */
 	public static Pezzo selected;
 	
 	private static Gioco gioco;
@@ -123,12 +123,12 @@ public class Gioco {
 	 */
 	public void selectPiece(int row,int col) {
 		if(selected != null) {
-			// se c'� gi� un pezzo selezionato
+			// se c'è già un pezzo selezionato
 			// lo deseleziono
 			selected.getStyleClass().remove("pezzoSelezionato");
 		}
 		
-		// non c'� nessun pezzo selezionato, oppure quello selezionato � stato deselezionato
+		// non c'è nessun pezzo selezionato, oppure quello selezionato è stato deselezionato
 		// seleziono il pezzo in posizione (row, col)
 		Posizione pos = new Posizione(row, col);
 		selected = getPezzoByPosizione(pos);
@@ -247,7 +247,7 @@ public class Gioco {
 		switch(selected.getTipoPezzo()) {
 		
 		case QUADRATONE:
-			// Pu� essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
+			// Può essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
 			if(r>0 && isEmpty(r-1,c) && isEmpty(r-1,c+1)) {
 				GridPane.setConstraints(selected, c, r-1);
 				listaMosse.add(new Mossa(r,c,r-1,c));
@@ -258,7 +258,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_ORIZZ:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
 			if(r>0 && isEmpty(r-1,c) && isEmpty(r-1,c+1)) {
 				GridPane.setConstraints(selected, c, r-1);
 				listaMosse.add(new Mossa(r,c,r-1,c));
@@ -266,7 +266,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_VERT:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
 			if(r>0 && isEmpty(r-1,c)) {
 				GridPane.setConstraints(selected, c, r-1);
 				listaMosse.add(new Mossa(r,c,r-1,c));
@@ -275,7 +275,7 @@ public class Gioco {
 			}
 			break;
 		case QUADRATINO:
-			// pu� essere spostato solo se c'� una cella libera adiacente
+			// può essere spostato solo se c'è una cella libera adiacente
 			if(r>0 && isEmpty(r-1,c)) {
 				GridPane.setConstraints(selected, c, r-1);
 				listaMosse.add(new Mossa(r,c,r-1,c));
@@ -297,7 +297,7 @@ public class Gioco {
 		switch(selected.getTipoPezzo()) {
 		
 		case QUADRATONE:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
 			if(r<3 && isEmpty(r+2,c) && isEmpty(r+2,c+1)) {
 				GridPane.setConstraints(selected, c, r+1);
 				listaMosse.add(new Mossa(r,c,r+1,c));
@@ -308,7 +308,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_ORIZZ:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
 			if(r<4 && isEmpty(r+1,c) && isEmpty(r+1,c+1)) {
 				GridPane.setConstraints(selected, c, r+1);
 				listaMosse.add(new Mossa(r,c,r+1,c));
@@ -316,7 +316,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_VERT:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
 			if(r<3 && isEmpty(r+2,c)) {
 				GridPane.setConstraints(selected, c, r+1);
 				listaMosse.add(new Mossa(r,c,r+1,c));
@@ -324,7 +324,7 @@ public class Gioco {
 			}
 			break;
 		case QUADRATINO:
-			// pu� essere spostato solo se c'� una cella libera adiacente
+			// può essere spostato solo se c'è una cella libera adiacente
 			if(r<4 && isEmpty(r+1,c)) {
 				GridPane.setConstraints(selected, c, r+1);
 				listaMosse.add(new Mossa(r,c,r+1,c));
@@ -348,7 +348,7 @@ public class Gioco {
 		switch(selected.getTipoPezzo()) {
 		
 		case QUADRATONE:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
 			if(c>0 && isEmpty(r,c-1) && isEmpty(r+1,c-1)) {
 				GridPane.setConstraints(selected, c-1, r);
 				listaMosse.add(new Mossa(r,c,r,c-1));
@@ -359,7 +359,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_ORIZZ:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
 			if(c>0 && isEmpty(r,c-1)) {
 				GridPane.setConstraints(selected, c-1, r);
 				listaMosse.add(new Mossa(r,c,r,c-1));
@@ -367,7 +367,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_VERT:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
 			if(c>0 && isEmpty(r,c-1) && isEmpty(r+1,c-1)) {
 				GridPane.setConstraints(selected, c-1, r);
 				listaMosse.add(new Mossa(r,c,r,c-1));
@@ -375,7 +375,7 @@ public class Gioco {
 			}
 			break;
 		case QUADRATINO:
-			// pu� essere spostato solo se c'� una cella libera adiacente
+			// può essere spostato solo se c'è una cella libera adiacente
 			if(c>0 && isEmpty(r,c-1)) {
 				GridPane.setConstraints(selected, c-1, r);
 				listaMosse.add(new Mossa(r,c,r,c-1));
@@ -400,7 +400,7 @@ public class Gioco {
 		switch(selected.getTipoPezzo()) {
 		
 		case QUADRATONE:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti (orizzontali o verticali) e vicine al pezzo cliccato
 			if(c<2 && isEmpty(r,c+2) && isEmpty(r+1,c+2)) {
 				GridPane.setConstraints(selected, c+1, r);
 				listaMosse.add(new Mossa(r,c,r,c+1));
@@ -411,7 +411,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_ORIZZ:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e orizzontali (nella stessa riga) e vicine al pezzo cliccato
 			if(c<2 && isEmpty(r,c+2)) {
 				GridPane.setConstraints(selected, c+1, r);
 				listaMosse.add(new Mossa(r,c,r,c+1));
@@ -419,7 +419,7 @@ public class Gioco {
 			}
 			break;
 		case RETTANGOLO_VERT:
-			// pu� essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
+			// può essere spostato solo se le 2 celle libere sono adiacenti e verticali (nella stessa colonna) e vicine al pezzo cliccato
 			if(c<3 && isEmpty(r,c+1) && isEmpty(r+1,c+1)) {
 				GridPane.setConstraints(selected, c+1, r);
 				listaMosse.add(new Mossa(r,c,r,c+1));
@@ -427,7 +427,7 @@ public class Gioco {
 			}
 			break;
 		case QUADRATINO:
-			// pu� essere spostato solo se c'� una cella libera adiacente
+			// può essere spostato solo se c'è una cella libera adiacente
 			if(c<3 && isEmpty(r,c+1)) {
 				GridPane.setConstraints(selected, c+1, r);
 				listaMosse.add(new Mossa(r,c,r,c+1));
@@ -454,11 +454,11 @@ public class Gioco {
 	            int endCol = pezzoCol + pezzo.SPAN_WIDTH;
 
 	            if (row >= pezzoRow && row < endRow && col >= pezzoCol && col < endCol) {
-	                return false; // La cella � occupata da un pezzo diverso
+	                return false; // La cella è occupata da un pezzo diverso
 	            }
 	        }
 	    }
-	    return true; // La cella � libera
+	    return true; // La cella è libera
 	}
 	
 	
